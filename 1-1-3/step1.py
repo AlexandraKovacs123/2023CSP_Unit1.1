@@ -26,7 +26,15 @@ painter.pendown()
 for octagon in range(8):
     painter.forward(40)
     painter.left(45)
+
 painter.penup()
+painter.forward(150)
+painter.left(90)
+painter.forward(100)
+painter.pendown()
+
+
+
 wn = trtl.Screen()
 wn.mainloop()
 
