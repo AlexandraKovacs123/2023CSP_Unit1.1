@@ -30,11 +30,18 @@ for octagon in range(8):
 painter.penup()
 painter.forward(150)
 painter.left(90)
-painter.forward(100)
-painter.pendown()
+painter.forward(200)
 
+painter.shape("circle")
+painter.turtlesize(2)
 
+painter.color("red")
+painter.goto(-20,200)
+
+for flower in range(18):
+    painter.right(20)
+    painter.forward(20)
+    painter.stamp()
 
 wn = trtl.Screen()
 wn.mainloop()
-
