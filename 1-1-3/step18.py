@@ -22,19 +22,12 @@ for floor in range(num_floors):
     painter.color("gray")
     y = y + 5  # location of next floor
 
-if (rem > 3)
-
-rem= floor % 21
-if (rem == 0):
-    x = x + 60
-    y = 0
-
-painter.goto(x,y)
-y = y + 5
-
     # draw the floor
     painter.pendown()
     painter.forward(50)
+rem = floor % 6
+if (rem > 2):
+  painter.color("blue")
 
 wn = trtl.Screen()
 wn.mainloop()
