@@ -18,13 +18,14 @@ num_floors = 63
 for floor in range(num_floors):
     # set placement and color of turtle
     painter.penup()
-    painter.gosto(x, y)
+    painter.goto(x, y)
     painter.color("gray")
-    y = y + 5  # location of next floor
+    # location of next floor
     rem = floor % 6
     if (rem < 2):
         painter.color("blue")
-    if (r)
+    if (rem > 3):
+        painter.color("lime")
     # draw the floor
     painter.pendown()
     painter.forward(50)
