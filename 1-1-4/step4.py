@@ -14,19 +14,19 @@ while (start_loop == 's'):
     painter.circle(25,360,4)
 
 # Add an infinite loop
-#painter.penup()
-#painter.pencolor("salmon")
+painter.penup()
+painter.pencolor("salmon")
 
-#line = 4
+line = 4
 
-#while (line % 2 != 2):
-    #painter.left(30)
-    #painter.pendown()
-    #painter.circle(25,360,6)
-    #line = line + 2
-    #if (line % 54 == 0):
+while (line % 2 != 2):
+    painter.left(30)
+    painter.pendown()
+    painter.circle(25,360,6)
+    line = line + 2
+    if (line % 54 == 0):
         painter.color("lime")
-    #if (line % 108 == 0):
+    if (line % 108 == 0):
         painter.color("salmon")
 wn = trtl.Screen()
 wn.mainloop()
