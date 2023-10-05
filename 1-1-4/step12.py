@@ -9,7 +9,7 @@ width = 400
 height = 300
 
 painter = trtl.Turtle()
-painter.speed(3)
+painter.speed(7)
 painter.color(color1)
 
 answer = "y"
