@@ -20,12 +20,14 @@ for floor in range(num_floors):
     painter.penup()
     painter.goto(x, y)
     painter.color("gray")
-    # location of next floor
+    y = y + 5 # location of next floor
     rem = floor % 6
-    if (rem < 2):
+    if (rem > 2):
         painter.color("blue")
-    if (rem > 3):
+
+    if (rem < 3):
         painter.color("lime")
+
     # draw the floor
     painter.pendown()
     painter.forward(50)
