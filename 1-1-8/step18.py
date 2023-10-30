@@ -42,18 +42,23 @@ for each horizturtle
                 if collision, remove from list
 """
 distance = 3
+pixelSize = 20
+collisionColor = "grey"
+collisionShape = "circle"
 
 for step in range(50):
     for ht in horiz_turtles:
         for vt in vert_turtles:
             ht.forward(distance)
             vt.forward(distance)
-        if ((ht.xcor() - vt.xcor()) < 20):
-            vert_turtles.remove(vt)
-            horiz_turtles.remove(ht)
-        if ((ht.ycor() - vt.ycor()) < 20):
-            vert_turtles.remove(vt)
-            horiz_turtles.remove(ht)
+        if (abs(ht.xcor() - vt.xcor()) < pixelSize):
+            if (abs(ht.ycor() - vt.ycor()) < pixelSize):
+                vt.hideturtle()
+                ht.shape(collisionShape)
+                ht.fillcolor(collisionColor)
+                horiz_turtles.remove(ht)
+                vert_turtles.remove(vt)
+
 
 
 
