@@ -53,7 +53,7 @@ for step in range(50):
             vt.forward(distance)
         if (abs(ht.xcor() - vt.xcor()) < pixelSize):
             if (abs(ht.ycor() - vt.ycor()) < pixelSize):
-                vt.hideturtle()
+                # vt.hideturtle()
                 ht.shape(collisionShape)
                 ht.fillcolor(collisionColor)
                 horiz_turtles.remove(ht)
