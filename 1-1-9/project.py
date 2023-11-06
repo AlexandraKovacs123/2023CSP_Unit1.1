@@ -101,17 +101,31 @@ for eyes in range (2):
     trtl.penup()
     trtl.forward(80)
     trtl.pendown()
+
+trtl.penup()
+trtl.goto(-15,110)
 for smallEyes in range(2):
     trtl.turtlesize(1)
-    trtl.penup()
     trtl.fillcolor("white")
-    trtl.goto(-15,110)
     trtl.stamp()
     trtl.forward(80)
 
+# nose
+trtl.goto(15,80)
+trtl.color("orange")
+trtl.penup()
+trtl.shape("arrow")
+trtl.turtlesize(2)
+trtl.stamp()
+
+
+
+"""
 for bow in range(2):
     trtl.penup()
-    trtl.goto(-15,110)
+    trtl.goto(-15,50)
+    trtl.color("black")
+"""
 
 
 """
